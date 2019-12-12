@@ -4,7 +4,7 @@ import useFetch from '../../Hooks/useFetch';
 import IdeaBoard from '../IdeaBoard';
 
 // Custom API Hook -- check out /src/Hooks/useFetch.js
-const ideasApi = useFetch("http://192.168.1.8:3001/ideas");
+const ideasApi = useFetch("http://localhost:3001/ideas");
 
 // IdeaApp
 export default class App extends Component {
