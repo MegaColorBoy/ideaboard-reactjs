@@ -1,7 +1,9 @@
 # Ideaboard in ReactJS
+Author: Abdush Shakoor
 A simple idea board written in ReactJS for fun.
+Got any questions? Contact me via [email](mailto: abdushshakoor1992@hotmail.com)!
 
-## Component Tree
+## Hierarchy
 This tree can be used as a reference to understand the hierarchy of the components in the application.
 
 - App
@@ -19,12 +21,13 @@ This tree can be used as a reference to understand the hierarchy of the componen
 - SASS: Modular CSS
 
 ### Commands
+
 #### To start the mock REST API server:
 ```bash
 json-server src/ideas.js --port 3001
 ```
 
-##### To start the ReactJS App:
+#### To start the ReactJS App:
 ```bash
 npm start
 ```
