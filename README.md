@@ -3,7 +3,7 @@ Author: Abdush Shakoor
 
 A simple idea board written in ReactJS for fun.
 
-Got any questions? Contact me via [email](mailto: abdushshakoor1992@hotmail.com)!
+Got any questions? Contact me via [email](mailto:abdushshakoor1992@hotmail.com)!
 
 ## Hierarchy
 This tree can be used as a reference to understand the hierarchy of the components in the application.
