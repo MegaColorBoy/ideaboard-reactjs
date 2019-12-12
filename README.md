@@ -1,6 +1,8 @@
 # Ideaboard in ReactJS
 Author: Abdush Shakoor
+
 A simple idea board written in ReactJS for fun.
+
 Got any questions? Contact me via [email](mailto: abdushshakoor1992@hotmail.com)!
 
 ## Hierarchy
