@@ -57,7 +57,7 @@ export default class IdeaForm extends Component {
   componentDidMount = () => {
     this.titleInput.focus();
     this.setState({
-      characterCount: this.props.body.length
+      characterCount: this.state.body.length
     });
   }
 

@@ -22,24 +22,26 @@ This tree can be used as a reference to understand the hierarchy of the componen
 - json-server: Mock REST API server
 - SASS: Modular CSS
 
-### Commands
+### Useful instructions
 
 #### Install the NPM packages
 ```bash
 npm install
 ```
 
-#### To start the mock REST API server:
+### Install json-server
 ```bash
-json-server src/ideas.js --port 3001
+npm install -g json-server
 ```
 
-#### To start the ReactJS App:
+#### To start the React app + mock REST API server
+Make sure to execute each command in a separate command-line interface.
 ```bash
+json-server src/ideas.js --port 3001
 npm start
 ```
 
-## Log
+## Logs
 - Made use of conditional rendering
 - Add, edit and delete ideas
 - onFocus event is fired when an idea is created
