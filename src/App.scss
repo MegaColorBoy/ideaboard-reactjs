@@ -1,0 +1,188 @@
+$slate: #091e42;
+$squidink: #172b4d;
+$goldenstate: #ffab00;
+$dajuice: #6554c0;
+$doctor: #ffffff;
+$lavendersecret: #eae6ff;
+$phantommist: #c0b6f2;
+$prince: #403294;
+
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  background-color: $phantommist;
+}
+
+.idea-board {
+  background-color: $phantommist;
+  min-height: 100vh;
+}
+
+.idea-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+  grid-gap: 10px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.idea-card {
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  background-color: $lavendersecret;
+  color: $prince;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s all ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    background-color: $prince;
+    color: $lavendersecret;
+    .buttonGroup {
+      visibility: visible;
+      button {
+        color: $lavendersecret;      
+      }
+    }
+  }
+
+  h3 {
+    // text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    word-break: break-word;
+  }
+
+  h5 {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0;
+    word-break: break-word;
+  }
+
+  p {
+    font-size: 11px;
+    font-style: italic;
+    margin: 5px 0;
+  }
+
+  .content {
+    padding: 15px 15px 0;
+  }
+
+  &.idea-form {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $prince;
+    color: $lavendersecret;
+    transform: translateY(-3px);
+
+    input[type="text"], 
+    textarea {
+      padding: 0px;
+      width: 100%;
+      box-shadow: none;
+      border: none;
+      background-color: transparent;
+      color: $lavendersecret;
+
+      &:focus {
+        outline-color: darkgrey;
+      }
+    }
+
+    p {
+      color: $lavendersecret;
+    }
+
+    textarea {
+      resize: none;
+
+      &.titleBox {
+        height: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      &.bodyBox {
+        font-size: 11px;
+        font-weight: 400;
+        height: 40px;
+
+        &::-webkit-scrollbar {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+.toggleButton {
+  border: 2px dashed $prince;
+  background-color: transparent;
+  color: $prince;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  transition: 0.2s all ease;
+
+  &:hover {
+    background-color: $prince;
+    color: $lavendersecret;
+    border-color: transparent;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 10px 0px;
+  }
+}
+
+.btn {
+  &.no-bg {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  visibility: hidden;
+  // margin-left: auto;
+  font-size: 11px;
+  padding: 15px;
+
+  button {
+    position: relative;
+    color: $prince;
+    margin: 0px 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
