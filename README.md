@@ -24,6 +24,11 @@ This tree can be used as a reference to understand the hierarchy of the componen
 
 ### Commands
 
+#### Install the NPM packages
+```bash
+npm install
+```
+
 #### To start the mock REST API server:
 ```bash
 json-server src/ideas.js --port 3001
